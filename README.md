@@ -21,10 +21,10 @@ cd ~
 git clone https://github.com/LinodeContent/pythonapp-example.git
 ```
 
-Change to `pythonapp` folder:
+Change to `pythonapp-example` folder:
 
 ```
-cd pythonapp
+cd pythonapp-example
 ```
 
 Install the application:
@@ -33,7 +33,7 @@ Install the application:
 python setup.py install
 ```
 
-Or if you want to start editing it right away:
+Or if you want to start developing it right away:
 
 ```
 python setup.py develop
@@ -50,35 +50,22 @@ python setup.py test
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+This application example is not registered on `pypi.python.org`, feel free to edit it, upload your source and then distribute/install using `pip` 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Help is welcome to expand this simple example.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Current version is 0.0.1
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Damaso Sanoja** - [Damaso Sanoja](https://github.com/damasosanoja)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
 
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
