@@ -1,0 +1,12 @@
+# Files and directories to be ignored:
+
+# Compiled python modules.
+*.pyc
+
+# Setuptools folder.
+/dist/
+
+# Python eggs from setuptools.
+/*.egg-info
+/*.egg
+
