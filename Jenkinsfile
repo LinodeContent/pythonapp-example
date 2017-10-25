@@ -17,4 +17,5 @@ pipeline {
         success {
             echo 'I succeeeded!'
         }
+  }
 }
