@@ -10,8 +10,9 @@ pipeline {
       steps {
         sh '''
           python setup.py test
-          echo "Begin of nose2 tests"
+          echo "Begin of nose tests"
           echo "===================="
+          pip install nosetests
           nosetests --with-xunit
           '''
       }
