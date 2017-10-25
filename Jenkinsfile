@@ -12,8 +12,8 @@ pipeline {
           python setup.py test
           echo "Begin of nose tests"
           echo "===================="
-          pip install nosetests
-          nosetests --with-xunit
+          nose2 --plugin nose2.plugins.junitxml --junit-xml tests
+          
           '''
       }
     }
