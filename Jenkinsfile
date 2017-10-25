@@ -19,5 +19,7 @@ pipeline {
         success {
             echo 'I succeeeded!'
         }
+        always {
+            junit 'build/reports/**/*.xml'
   }
 }
