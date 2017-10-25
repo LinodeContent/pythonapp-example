@@ -1,8 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'python'
-      args '3.5.1'
+      image 'python:3.5.4-slim-jessie'
     }
     
   }
@@ -13,4 +12,9 @@ pipeline {
       }
     }
   }
+  post {
+        
+        success {
+            echo 'I succeeeded!'
+        }
 }
