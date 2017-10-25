@@ -8,7 +8,9 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'python --version'
+        sh '''
+          python setup.py test
+          '''
       }
     }
   }
