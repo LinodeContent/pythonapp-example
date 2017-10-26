@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'ubuntu:16.04'
+      image 'python:3.5.4-slim-jessie'
     }
     
   }
