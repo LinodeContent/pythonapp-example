@@ -23,7 +23,7 @@ setup(name='pythonapp',
           'termcolor',
       ],
       test_suite='nose.collector',
-      tests_require=['nose', 'nose-cover3', 'nose2'],
+      tests_require=['nose', 'nose-cover3', 'xmlrunner'],
       entry_points={
           'console_scripts': ['pythonapp-msg=pythonapp.command_line:main'],
       },
