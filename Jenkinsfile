@@ -12,7 +12,7 @@ pipeline {
           python setup.py test
           echo "Begin of unittests"
           echo "==============="
-          python pythonapp/tests/test_app.py 
+          python tests.py 
           
           '''
       }
