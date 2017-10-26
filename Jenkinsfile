@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'python:3.5.4-slim-jessie'
+      image 'ubuntu:16.04'
     }
     
   }
@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''
-          pip install virtualenv
+          
           python setup.py test
           echo "Begin of unittests"
           echo "==============="
