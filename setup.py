@@ -22,8 +22,8 @@ setup(name='pythonapp',
       install_requires=[
           'termcolor',
       ],
-      test_suite='nose.collector',
-      tests_require=['nose', 'nose-cover3', 'xmlrunner'],
+      test_suite='tests',
+      tests_require=['xmlrunner'],
       entry_points={
           'console_scripts': ['pythonapp-msg=pythonapp.command_line:main'],
       },
