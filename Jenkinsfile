@@ -9,11 +9,11 @@ pipeline {
     stage('build') {
       steps {
         sh '''
-          
-          python setup.py test
+          whoami
+          python3 setup.py test
           echo "Begin of unittests"
           echo "==============="
-          python tests.py 
+          python3 tests.py 
           
           '''
       }
