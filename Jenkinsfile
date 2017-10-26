@@ -10,9 +10,9 @@ pipeline {
       steps {
         sh '''
           python setup.py test
-          echo "Begin of nose tests"
-          echo "===================="
-          nose2 --plugin nose2.plugins.junitxml --junit-xml tests
+          echo "Begin of unittests"
+          echo "==============="
+          python pythonapp/tests/test_app.py 
           
           '''
       }
