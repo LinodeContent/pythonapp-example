@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''
-          pip install --no-cachedir virtualenv
+          pip install virtualenv
           python setup.py test
           echo "Begin of unittests"
           echo "==============="
