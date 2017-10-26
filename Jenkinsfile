@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''
+          pip install unittest-xml-reporting
           python setup.py test
           echo "Begin of unittests"
           echo "==============="
