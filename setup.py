@@ -23,7 +23,7 @@ setup(name='pythonapp',
           'termcolor',
       ],
       test_suite='tests',
-      tests_require=['xmlrunner'],
+      tests_require=['xmlrunner', ['unittest-xml-reporting']],
       entry_points={
           'console_scripts': ['pythonapp-msg=pythonapp.command_line:main'],
       },
