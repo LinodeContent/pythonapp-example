@@ -27,8 +27,8 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-                    pip install twine
-                    pip install wheel
+                    sudo -H pip install twine
+                    sudo -H pip install wheel
                     '''
       }
     }
