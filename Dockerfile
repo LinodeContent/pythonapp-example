@@ -1,7 +1,7 @@
-FROM alpine:3.5
+FROM python:3.5.4-slim-jessie
 
 # Update
-RUN apk add --update python py-pip
+RUN pip install --upgrade pip
 
 # Install app dependencies
 ADD requirements.txt /tmp/requirements.txt
