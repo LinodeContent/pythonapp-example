@@ -1,8 +1,6 @@
 pipeline {
   agent {
-    docker {
-      image 'python:3.5.4-slim-jessie'
-    }
+    dockerfile true
     
   }
   stages {
@@ -27,8 +25,7 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-                    sudo -H pip install twine
-                    sudo -H pip install wheel
+                    
                     '''
       }
     }
