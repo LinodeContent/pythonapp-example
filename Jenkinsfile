@@ -27,7 +27,8 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-                    pip -V
+                    pip show twine
+                    pip show wheel
                     '''
       }
     }
