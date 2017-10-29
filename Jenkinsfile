@@ -29,7 +29,7 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-twine -u username -p password upload dist/*
+twine upload dist/*
                     
                     '''
       }
