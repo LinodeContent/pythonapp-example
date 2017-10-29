@@ -10,7 +10,6 @@ pipeline {
                 steps {
                     sh '''
                     echo "This is your building Block"
-                    echo "==========================="
                     python -V
                     python setup.py build
                     '''
@@ -20,7 +19,6 @@ pipeline {
                 steps {
                     sh '''
                     echo "This is your testing Block"
-                    echo "=========================="
                     python setup.py test
                     '''
                 }
@@ -29,8 +27,7 @@ pipeline {
                 steps {
                     sh '''
                     echo "This is your deployment Block"
-                    echo "============================="
-
+                    pip -V
                     '''
                 }
             }
