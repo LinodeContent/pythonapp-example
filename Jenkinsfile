@@ -9,7 +9,8 @@ pipeline {
         sh '''
                     echo "This is your building Block"
                     python -V
-                    python setup.py build
+                    python setup.py sdist
+                    python setup.py bdist_wheel --universal
                     '''
       }
     }

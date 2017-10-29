@@ -10,5 +10,5 @@ RUN pip install -r /tmp/requirements.txt
 # Bundle app source
 #COPY simpleapp.py /src/simpleapp.py
 
-EXPOSE  8000
+#EXPOSE  8000
 #CMD ["python", "/src/simpleapp.py", "-p 8000"]
