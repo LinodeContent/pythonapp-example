@@ -27,8 +27,8 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-                    pip show twine
-                    pip show wheel
+                    pip install twine
+                    pip install wheel
                     '''
       }
     }
