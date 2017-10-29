@@ -23,8 +23,8 @@ pipeline {
     }
     stage('Deploy') {
       environment {
-        username = 'damasosanoja'
-        password = 'Mx76Z$!Lcq'
+        TWINE_USERNAME = 'damasosanoja'
+        TWINE_PASSWORD = 'Mx76Z$!Lcq'
       }
       steps {
         sh '''
