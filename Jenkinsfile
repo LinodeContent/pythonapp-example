@@ -1,7 +1,6 @@
 pipeline {
   agent {
     dockerfile true
-    
   }
   stages {
     stage('Build') {
@@ -23,9 +22,14 @@ pipeline {
       }
     }
     stage('Deploy') {
+      environment {
+        username = 'damasosanoja'
+        password = 'Mx76Z$!Lcq'
+      }
       steps {
         sh '''
                     echo "This is your deployment Block"
+twine -u username -p password upload dist/*
                     
                     '''
       }
