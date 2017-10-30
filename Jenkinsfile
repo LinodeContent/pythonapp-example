@@ -1,7 +1,6 @@
 pipeline {
   agent {
     dockerfile true
-    
   }
   stages {
     stage('Build') {
@@ -22,10 +21,14 @@ pipeline {
       }
     }
     stage('Deploy') {
+      environment {
+        TWINE_USERNAME = 'damasosanoja'
+        TWINE_PASSWORD = 'Mx76Z$!Lcq'
+      }
       steps {
         sh '''
             echo "This is your deployment Block"
-                    
+            twine upload --repository-url https://test.pypi.org/legacy/ dist/* 
             '''
       }
     }
