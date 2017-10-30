@@ -29,7 +29,8 @@ pipeline {
       steps {
         sh '''
                     echo "This is your deployment Block"
-twine upload dist/*
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
                     
                     '''
       }
