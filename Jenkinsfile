@@ -7,27 +7,26 @@ pipeline {
     stage('Build') {
       steps {
         sh '''
-                    echo "This is your building Block"
-                    python -V
-                    python setup.py sdist
-                    python setup.py bdist_wheel --universal
-                    '''
+            echo "This is your building Block"
+            python -V
+            python setup.py sdist bdist_wheel --universal
+            '''
       }
     }
     stage('Test') {
       steps {
         sh '''
-                    echo "This is your testing Block"
-                    python setup.py test
-                    '''
+            echo "This is your testing Block"
+            python setup.py test
+            '''
       }
     }
     stage('Deploy') {
       steps {
         sh '''
-                    echo "This is your deployment Block"
+            echo "This is your deployment Block"
                     
-                    '''
+            '''
       }
     }
   }
