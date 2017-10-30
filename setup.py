@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='pythonapp',
-      version='0.0.1',
+      version='0.0.1.1',
       description='Example Python application with test suite',
       long_description=readme(),
       classifiers=[
