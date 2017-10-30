@@ -36,6 +36,7 @@ pipeline {
   post {
     always {
       echo 'Actions here will always happen.'
+      cleanWs()
       
     }
     
